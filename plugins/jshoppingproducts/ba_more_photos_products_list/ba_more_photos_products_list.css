@@ -1,0 +1,124 @@
+.jshop .image_block {
+	width: 100%;
+	position: relative;
+}
+/*
+.jshop .image_block .product_label {
+    position: absolute;
+    margin-left: -5px;
+    margin-top: -5px;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+*/
+.jshop .image_block a {
+	display: none;
+}
+
+.jshop .ba_more_photos {
+	display: block;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.jshop .ba_more_photos a {
+	display: block;
+	font-size: 0;
+	line-height: 0;
+}
+
+.jshop .ba_more_photos a img {
+	transform: translate(-50%, 0);
+	margin-left: 50%;
+	height: 100%;
+	display: block;
+}
+
+.jshop .ba_more_photos.style_fade .more_photos_image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.jshop .ba_more_photos .more_photos_image {
+	z-index: 2;
+	overflow: hidden;
+}
+
+.jshop .ba_more_photos .more_photos_image.show {
+	z-index: 3;
+}
+
+.jshop .ba_more_photos.style_slide .more_photos_wrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+
+.jshop .ba_more_photos.style_slide .more_photos_image {
+	float: left;
+}
+
+.jshop .ba_more_photos .more_photos_arrow {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	z-index: 4;
+	opacity: 0;
+}
+
+.jshop .ba_more_photos:hover .more_photos_arrow,
+.jshop .ba_more_photos.show_arrow .more_photos_arrow {
+	opacity: 1;
+}
+
+.jshop .ba_more_photos .more_photos_arrow.more_photos_arrow_prev {
+	left: 0;
+}
+
+.jshop .ba_more_photos .more_photos_arrow.more_photos_arrow_next {
+	right: 0;
+}
+
+.jshop .ba_more_photos .more_photos_arrow a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	line-height: 25px;
+}
+
+.jshop .ba_more_photos .more_photos_arrow a:hover {
+	color: #000;
+}
+
+.jshop .ba_more_photos_dots {
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+}
+
+.jshop .ba_more_photos_dots .dot_link {
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 5px;
+	border: 1px solid #000;
+	background: #fff;
+	border-radius: 50%;
+}
+
+.jshop .ba_more_photos_dots .dot_link:hover,
+.jshop .ba_more_photos_dots .dot_link.active {
+	background: #000;
+}
