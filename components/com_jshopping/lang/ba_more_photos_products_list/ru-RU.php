@@ -1,11 +1,11 @@
 <?php
 /**
-* @version 0.0.6
-* @author А.П.В.
-* @package ba_more_photos_products_list for Jshopping
-* @copyright Copyright (C) 2010 blog-about.ru. All rights reserved.
-* @license GNU/GPL
-**/
+ * @version 0.1.1
+ * @author А.П.В.
+ * @package ba_more_photos_products_list for Jshopping
+ * @copyright Copyright (C) 2010 blog-about.ru. All rights reserved.
+ * @license GNU/GPL
+ **/
 defined('_JEXEC') or die('Restricted access');
 
 define('_JSHOP_BAMPPL_NAME', "Дополнительные изображения товара в списке товаров.");
@@ -34,4 +34,3 @@ define('_JSHOP_BAMPPL_RETURN_DEFAULT', "Вернуть к исходному");
 define('_JSHOP_BAMPPL_RETURN_DEFAULT_DESC', "Выберите, возвращать к первому изображению после того, как убрали наведение курсора на товар или оставить то, на котором остановились.<br />Доступно для методов: При наведении и Стрелки.");
 define('_JSHOP_BAMPPL_SHOW_ARROW', "Показать стрелки");
 define('_JSHOP_BAMPPL_SHOW_ARROW_DESC', "Выберите, показывать стрелки навигации всегда или только при наведении курсора на товар.<br />Доступно для методов: Стрелки.");
-?>

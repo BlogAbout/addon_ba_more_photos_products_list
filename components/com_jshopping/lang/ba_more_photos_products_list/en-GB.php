@@ -1,11 +1,11 @@
 <?php
 /**
-* @version 0.0.6
-* @author А.П.В.
-* @package ba_more_photos_products_list for Jshopping
-* @copyright Copyright (C) 2010 blog-about.ru. All rights reserved.
-* @license GNU/GPL
-**/
+ * @version 0.1.1
+ * @author А.П.В.
+ * @package ba_more_photos_products_list for Jshopping
+ * @copyright Copyright (C) 2010 blog-about.ru. All rights reserved.
+ * @license GNU/GPL
+ **/
 defined('_JEXEC') or die('Restricted access');
 
 define('_JSHOP_BAMPPL_NAME', "Additional product images in the product list.");
@@ -34,4 +34,3 @@ define('_JSHOP_BAMPPL_RETURN_DEFAULT', "Revert to original");
 define('_JSHOP_BAMPPL_RETURN_DEFAULT_DESC', "Choose whether to return to the first image after moving the cursor over the item or keep the one where you left off.<br />Available for methods: Hover and Arrows.");
 define('_JSHOP_BAMPPL_SHOW_ARROW', "Show arrows");
 define('_JSHOP_BAMPPL_SHOW_ARROW_DESC', "Choose whether to show navigation arrows always or only when you hover over a product.<br /> Available for methods: Arrows.");
-?>
