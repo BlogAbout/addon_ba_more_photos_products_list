@@ -1,6 +1,6 @@
 <?php
 /**
- * @version 0.1.1
+ * @version 0.1.4
  * @author А.П.В.
  * @package ba_more_photos_products_list for Jshopping
  * @copyright Copyright (C) 2010 blog-about.ru. All rights reserved.
@@ -12,7 +12,7 @@ $name = 'JoomShopping addon - More Photos in Products List';
 $type = 'plugin';
 $element = 'ba_more_photos_products_list';
 $folders = array('jshoppingproducts');
-$version = '0.1.1';
+$version = '0.1.4';
 $cache = '{"creationDate":"23.08.2019","author":"Blog About","authorEmail":"info@blog-about.ru","authorUrl":"https://blog-about.ru","version":"' . $version . '"}';
 $params = '{}';
 

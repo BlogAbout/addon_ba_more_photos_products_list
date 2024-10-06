@@ -15,80 +15,61 @@
     overflow: hidden;
 }
 
-.jshop .ba_more_photos a {
+.jshop .ba_more_photos .ba-owl-carousel .owl-nav,
+.jshop .ba_more_photos .ba-owl-carousel .owl-dots {
+    display: none;
+}
+
+.jshop .ba_more_photos.show_arrows_hover .ba-owl-carousel .owl-nav,
+.jshop .ba_more_photos.show_dots_hover .ba-owl-carousel .owl-dots {
     display: block;
-    font-size: 0;
-    line-height: 0;
-}
-
-.jshop .ba_more_photos a img {
-    transform: translate(-50%, 0);
-    margin-left: 50%;
-    height: 100%;
-    display: block;
-}
-
-.jshop .ba_more_photos.style_fade .more_photos_image {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.jshop .ba_more_photos .more_photos_image {
-    z-index: 2;
-    overflow: hidden;
-}
-
-.jshop .ba_more_photos .more_photos_image.show {
-    z-index: 3;
-}
-
-.jshop .ba_more_photos.style_slide .more_photos_wrapper {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-}
-
-.jshop .ba_more_photos.style_slide .more_photos_image {
-    float: left;
-}
-
-.jshop .ba_more_photos .more_photos_arrow {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    z-index: 4;
     opacity: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
-.jshop .ba_more_photos:hover .more_photos_arrow,
-.jshop .ba_more_photos.show_arrow .more_photos_arrow {
+.jshop .ba_more_photos.show_arrows_hover .ba-owl-carousel:hover .owl-nav,
+.jshop .ba_more_photos.show_dots_hover .ba-owl-carousel:hover .owl-dots {
     opacity: 1;
 }
 
-.jshop .ba_more_photos .more_photos_arrow.more_photos_arrow_prev {
-    left: 0;
+.jshop .ba_more_photos.show_arrows_always .ba-owl-carousel .owl-nav,
+.jshop .ba_more_photos.show_dots_always .ba-owl-carousel .owl-dots {
+    display: block;
 }
 
-.jshop .ba_more_photos .more_photos_arrow.more_photos_arrow_next {
-    right: 0;
+.jshop .ba_more_photos .ba-owl-carousel .owl-nav .owl-next,
+.jshop .ba_more_photos .ba-owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 12px;
+    height: 12px;
+    z-index: 2;
 }
 
-.jshop .ba_more_photos .more_photos_arrow a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-    line-height: 25px;
+.jshop .ba_more_photos .ba-owl-carousel .owl-nav .owl-next {
+    right: 3px;
 }
 
-.jshop .ba_more_photos .more_photos_arrow a:hover {
-    color: #000;
+.jshop .ba_more_photos .ba-owl-carousel .owl-nav .owl-prev {
+    left: 3px;
 }
 
-.jshop .ba_more_photos_dots {
+.jshop .ba_more_photos .ba-owl-carousel .owl-nav .owl-next svg,
+.jshop .ba_more_photos .ba-owl-carousel .owl-nav .owl-prev svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+.jshop .ba_more_photos .ba-owl-carousel .owl-nav .owl-next svg path,
+.jshop .ba_more_photos .ba-owl-carousel .owl-nav .owl-prev svg path {
+    stroke: #000;
+}
+
+.jshop .ba_more_photos .ba-owl-carousel .owl-dots {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -97,20 +78,81 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
-.jshop .ba_more_photos_dots .dot_link {
-    display: block;
-    width: 12px;
-    height: 12px;
-    margin: 5px;
-    border: 1px solid #000;
-    background: #fff;
+.jshop .ba_more_photos .ba-owl-carousel .owl-dots .owl-dot {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.jshop .ba_more_photos .ba-owl-carousel .owl-dots .owl-dot + .owl-dot {
+    margin-left: 5px;
+}
+
+.jshop .ba_more_photos .ba-owl-carousel .owl-dots .owl-dot span {
     border-radius: 50%;
     box-sizing: border-box;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
-.jshop .ba_more_photos_dots .dot_link:hover,
-.jshop .ba_more_photos_dots .dot_link.active {
-    background: #000;
+.jshop .ba_more_photos .ba-owl-carousel .owl-dots .owl-dot.active span,
+.jshop .ba_more_photos .ba-owl-carousel .owl-dots .owl-dot:hover span {
+    background-color: #000;
+}
+
+.jshop .ba_more_photos a {
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.jshop .ba_more_photos a img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.jshop .ba_more_photos a span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.jshop .ba_more_photos a video {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.jshop .ba_more_photos.content_fill a img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.jshop .ba_more_photos.content_fill a video {
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
 }
